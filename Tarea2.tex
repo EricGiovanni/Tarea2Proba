@@ -8,6 +8,7 @@
     \usepackage{multicol}
     \usepackage{amsmath}
     \usepackage{amssymb}
+    \graphicspath{{images/}}
 
     \marginsize{1.5cm}{3cm}{3cm}{3cm}
     
@@ -107,6 +108,34 @@
                     $0$ \hspace{1cm} $e.o.c$
                 $\end{matrix}
             \right .$\vspace{.3cm}
+
+            \framebox{Solución:}\vspace{.3cm}
+
+            $(1)$ ¿Es una función de probabilidad?\vspace{.2cm}
+    
+            \hspace{.5cm} $i)$ $f(x)\geq 0$\vspace{.2cm}
+    
+            \hspace{.7cm} $f(x)>0$ pues $x>0$
+            
+            \hspace{.5cm} $ii)$ $\displaystyle{\int_{-\infty}^{\infty}}f(x) dx=1$
+    
+            \hspace{.7cm} $\displaystyle{\int_{-\infty}^{\infty}}4e^{-4x} dx=\displaystyle{\int_{0}^{\infty}}4e^{-4x}dx$ $u=-4x$, $du=-4dx$\vspace{.2cm}
+    
+            \hspace{.7cm}  $\Rightarrow \displaystyle\int_{0}^{\infty}e^{u} du = \left . e^{u} \right |_0^\infty= e^\infty - e^0 = 1$\vspace{.3cm}
+    
+            $\therefore$ $f(x)$ es una función de probabilidad.\vspace{.3cm}
+    
+            $(2)$ La función de distribución $(F(x))$:\vspace{.2cm}
+    
+            Como $f(x)=\frac{d}{dx}F(x)$, entonces $F(x)=\int f(x) dx$.\vspace{.2cm}
+    
+            $\int 4e^{-4x} dx = -e^{-4x} $\vspace{.2cm}
+    
+            $\therefore F(x)=-e^{-4x}$.\vspace{.3cm}
+    
+            \begin{center}
+                \includegraphics[scale=0.09]{proba.png}   
+            \end{center}
 
         6. Sea $X$ una variable aleatoria continua con función de 
         densidad\vspace{.1cm}
@@ -267,6 +296,8 @@
         de que $V$ exceda $40,000$ dado que $V$ excede $10,000$?
         \vspace{.1cm}
 
+        \framebox{Solución}\vspace{.1cm}
+
         $k\displaystyle\int_{0}^{1}(1-y)^4 = k\displaystyle\int_0^1(y^4-4y^3+6y^2-4y+1)dy 
         = k \left . \frac{y^5}{5} - y^4 + 2y^3 - 2y^2 + y \right |_0^1 = 
         k (\frac{1}{5} - 1 + 2 - 2 + 1) = k (\frac{1}{5})$, luego: \vspace{.1cm}
@@ -364,6 +395,8 @@
                 $\end{matrix}
             \right .$: ¿Cuál es la moda de $X$?\vspace{.1cm}
 
+        \framebox{Solución}\vspace{.1cm}
+
         Derivamos la funcion de densidad de probabilidad, tenemos que:\vspace{.1cm}
 
         $f'(x) = \frac{4}{9} - \frac{2x}{9}$, igualamos a cero para obtener el máximo\vspace{.1cm}
@@ -400,7 +433,18 @@
 
         \framebox{Solución}\vspace{.1cm}
 
-        Desviación estándar: $\sqrt{\frac{\displaystyle\sum(|x-x|)}{n}}$
+        Desviación estándar: $\sqrt{\frac{\displaystyle\sum(|x-prom(x)|)}{n}}$\vspace{.1cm}
+
+        $prom(x) = 50$\vspace{.1cm}
+
+        $|x_{i}-prom(x_{i})|^2 = |20-50|^2 + |30-50|^2 + |40-50|^2 
+        + |50-50|^2 + |60-50|^2 + |70-50|^2 + |80-50|^2 = 4600$\vspace{.1cm}
+
+        $sqrt{\frac{4600}{7}} = 25.634$\vspace{.1cm}
+
+        Coeficiente de variacion: $\frac{\Sigma}{|prom(x)|}*100$\vspace{.1cm}
+
+        Coeficiente de variación $= 51.2\%$
 
         21. Un actuario determina que el tamaño de la reclamación 
         para una determinada clase de accidente es una variable 
@@ -460,8 +504,26 @@
                 $\end{matrix}
             \right .$\vspace{.1cm}
 
-        Calcula la moda de la distribución.\vspace{.3cm}
+        Calcula la moda de la distribución.\vspace{.1cm}
+
+        \framebox{Solución:}\vspace{.1cm}
+
+        Para calcular la moda de la distribución se tiene que calcular $f.d.p.$ entonces $\frac{d}{dx}(F_x(x))=f_x(x)$\vspace{.1cm}
+
+        $\frac{d}{dx}(\frac{2x^2}{9}-\frac{x^3}{27})=\frac{4x}{9}-\frac{x^2}{9}$\vspace{.1cm}
+
+        $\Rightarrow x(\frac{4}{9}-\frac{x}{9}) \Rightarrow x = 0 \Rightarrow \frac{4}{9}= \frac{x}{9} \Rightarrow x = 4$\vspace{.2cm}
+
+        Entonces, $x=0$ ó $x=4$. $\therefore$ la moda de la función de distribución es 4.\vspace{.3cm}
 
         25. La variable aleatoria $X$ tiene f.d.p. $f(x)=ce^{-|x|}$ para $-\infty<x<\infty$. 
         Encuentra la varianza de $X$.
+
+        \begin{center}
+            \includegraphics[scale=0.4]{proba2.png}   
+        \end{center}
+
+        \begin{center}
+            \includegraphics[scale=0.4]{proba3.png}
+        \end{center}
     \end{document}
