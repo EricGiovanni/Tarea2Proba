@@ -113,6 +113,15 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 OUTPUT Tarea2.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT images/proba.png
+INPUT ./images/proba.png
+INPUT ./images/proba.png
+INPUT images/proba2.png
+INPUT ./images/proba2.png
+INPUT ./images/proba2.png
+INPUT images/proba3.png
+INPUT ./images/proba3.png
+INPUT ./images/proba3.png
 INPUT Tarea2.aux
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb

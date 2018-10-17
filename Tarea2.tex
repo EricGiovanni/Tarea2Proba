@@ -26,7 +26,11 @@
 
         a)$X(w)=a_{1}$\vspace{.1cm}
 
-        b)$Y(w)=0.0a_{1}a_{2}a_{3}...$\vspace{.3cm}
+        \hspace{.7cm} Es discreta y los valores qu puede tomar son $(.1,.2,...,.9)$\vspace{.1cm}
+
+        b)$Y(w)=0.0a_{1}a_{2}a_{3}...$\vspace{.1cm}
+
+        \hspace{.7cm} Es continua y los valores que puede tomar están en el intervalo $(0,0.1)$\vspace{.3cm}
 
         2. Comprueba que las siguientes funciones son de 
         probabilidad:\vspace{.1cm}
@@ -115,12 +119,20 @@
                 $\end{matrix}
             \right .$\vspace{.1cm}
 
+        $\displaystyle\int_{0}^{2}c(2x-x^3) dx=1$\vspace{.1cm}
+
+        $\Rightarrow c\displaystyle\int_{0}^{2}2x-x^3 dx=c[(x^2|_0^2)-(\frac{x^4}{4}|_0^2)]=c[4-\frac{16}{4}]=c[4-4] \Rightarrow c=1$\vspace{.1cm}
+
             $f(x) = \left \{ 
                 \begin{matrix}
                     c(2x-x^2)$\hspace{1cm} si $0 < x < 2 \\ $
                     $0$ \hspace{1cm} $e.o.c$
                 $\end{matrix}
-            \right .$\vspace{.3cm}
+            \right .$\vspace{.1cm}
+
+            $\displaystyle\int_{0}^{2}c(2x-x^2) dx=1$\vspace{.1cm}
+
+            $\Rightarrow c\displaystyle\int_{0}^{2}2x-x^2 dx=c[(x^2|_0^2)-(\frac{x^3}{3}|_0^2)]=c[4-\frac{8}{3}]=\frac{4}{3}c \Rightarrow c = \frac{3}{4}$\vspace{.3cm}
 
         4. Una moneda equilibrada se lanza repetidamente hasta 
         obtener un mismo resultado por tercera ocasión, no 
@@ -249,7 +261,30 @@
 
         a) Si $E(X)=0$ entonces $X=0$\vspace{.1cm}
 
-        b) Si $E(X)=E(Y)$ entonces $X=Y$\vspace{.3cm}
+        b) Si $E(X)=E(Y)$ entonces $X=Y$\vspace{.1cm}
+
+        Tomemos dos funciones:\vspace{.1cm}
+
+        $f(x_1) = \left \{ 
+                \begin{matrix}
+                    2x$\hspace{1cm} si $0 <x< 1 \\ $
+                    $0$ \hspace{1cm} $e.o.c$
+                $\end{matrix}
+            \right .$\vspace{.1cm}
+
+        $E(X_1)=\displaystyle{\int_{-\infty}^{\infty}}xf(x) dx=\displaystyle{\int_{0}^{1}}xf(x) dx=\frac{2x^3}{3}|_0^1=\frac{2}{3}$\vspace{.2cm}
+
+        $f(x_2) = \left \{ 
+                \begin{matrix}
+                    x$\hspace{1cm} si $0 <x< \displaystyle\sqrt[3]{2} \\ $
+                    $0$ \hspace{1cm} $e.o.c$
+                $\end{matrix}
+            \right .$\vspace{.1cm}
+
+        $E(X_2)=\displaystyle{\int_{-\infty}^{\infty}}xf(x) dx=\displaystyle{\int_{0}^{\displaystyle\sqrt[3]{2}}}x^2 dx=\frac{x^3}{3}|_0^{\sqrt[3]{2}}=\frac{2}{3}$\vspace{.1cm}
+
+        Tenemos que $E(X_1)=E(X_2)$ pero $X_1\neq X_2$\vspace{.3cm}
+
 
         10. El ladrón de Bagdad ha sido colocado en una prisión 
         en donde hay tres puertas. Una de las puertas conduce a un 
@@ -523,7 +558,21 @@
         22. La función generadora de momentos de la variable 
         aleatoria $X$ está dada por $M_x(t)=\frac{1}{(1+t)}$, 
         encuentra el tercer momento de $X$ sobre el punto $x=2$
-        \vspace{.3cm}
+        \vspace{.1cm}
+
+        \framebox{Solución}\vspace{.1cm}
+
+        $\frac{d}{dx}M_x(t)=-\frac{1}{(1+t)^2} \Rightarrow \frac{d}{dx}M_x(0)=-1=E(X)$\vspace{.1cm}
+
+        $\frac{d^2}{dx^2}M_x(t)=\frac{2}{(1+t)^3} \Rightarrow \frac{d^2}{dx^2}M_x(0)=2=E(X^2)$\vspace{.1cm}
+
+        $\frac{d^3}{dx^3}M_x(t)=-\frac{6}{(1+t)^4} \Rightarrow \frac{d^3}{dx^3}M_x(0)=-6 = E(X^3)$\vspace{.1cm}
+
+        Tenemos que calcular $E[(X-c)^3]$\vspace{.1cm}
+
+        $E[(X-c)^3]=E[X^3-3X^2c+3Xc^2-c^3]=E(X^3)-3E(X^2)c+3E(X)c^2-c^3$\vspace{.1cm}
+
+        $E[(X-c)^3]=-6-6c+c^2-c^3$
 
         23. Una variable aleatoria tiene la siguiente función de 
         distribución.\vspace{.1cm}
