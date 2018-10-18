@@ -206,6 +206,8 @@
 
         a) Grafica $f(x)$ y comprueba que es funcion de densidad\vspace{.1cm}
 
+        \framebox{Solución:}\vspace{.1cm}
+
         \begin{center}
             \includegraphics[scale=0.5]{grafica.eps}   
         \end{center}
@@ -216,6 +218,8 @@
 
         b)Encuentra y grafica la funcion de distribución de $X$. \vspace{.1cm}
 
+        \framebox{Solución:}\vspace{.1cm}
+
         $F_x(X)=\displaystyle\int_1^x t^{-2} dx=-t^{-1}|_1^x=1-\frac{1}{x}$\vspace{.1cm}
 
         \begin{center}
@@ -223,7 +227,15 @@
         \end{center}
 
         c) Encuentra y grafica la funcion de distribución de la variable 
-        $Y = e^{-x}$\vspace{.3cm}
+        $Y = e^{-x}$\vspace{.1cm}
+
+        \framebox{Solución:}\vspace{.1cm}
+
+        $\int e^{-x} dx= -e^{-x}+c = F(X)$\vspace{.1cm}
+
+        \begin{center}
+            \includegraphics[scale=0.4]{grafs.eps}   
+        \end{center}
 
         7. Calcula la esperanza de las siguientes variables 
         aleatorias con función de probabilidad: \vspace{.3cm}
@@ -277,12 +289,24 @@
                 $\end{matrix}
             \right .$\vspace{.1cm}
 
+            \framebox{Solución:}\vspace{.1cm}
+
+            $\displaystyle\sum_{k=1}^\infty (1-(1-(\frac{1}{2})^k))$
+
         ii. $F(x) = \left \{ 
                 \begin{matrix}
                     1-e^{-x}$\hspace{1cm} si $x > 0 \\ $
                     $0$ \hspace{1cm} $e.o.c$
                 $\end{matrix}
-            \right .$\vspace{.3cm}
+            \right .$\vspace{.1cm}
+
+            \framebox{Solución:}\vspace{.1cm}
+
+            $\displaystyle\int_0^\infty (1-(1-e^{-x})) dx=...$ $\Rightarrow u = -x; du=-dx$\vspace{.1cm}
+
+            $\Rightarrow ...=\displaystyle\int_{-\infty}^0e^u du=e^u|_{-infty}^0=e^0-e^{-\infty}=1$\vspace{.1cm}
+
+            $\therefore E(X)=1$\vspace{.3cm}
 
         9. Demustra o proporciona un contraejemplo: \vspace{.1cm}
 
@@ -668,7 +692,13 @@
 
         $Var(X)=E(X^2)-[E(X)]^2$\vspace{.1cm}
 
-        $E(X)=\displaystyle\int_1^2xF$
+        $\frac{d}{dx}F(x)=f(X)$ $\Rightarrow f(x)=x-1$
+
+        $E(X)=\displaystyle\int_{-\infty}^\infty xf(x)dx=\displaystyle\int_1^2x(x-1)dx=\displaystyle\int_1^2x^2-xdx=(\frac{x^3}{3}-\frac{x^2}{2})|_1^2=\frac{5}{6}$\vspace{.1cm}
+
+        $E(X^2)=\displaystyle\int_{-\infty}^\infty x^2f(x)dx=\displaystyle\int_1^2x^2(x-1)dx=\displaystyle\int_1^2 x^3-x^2dx=(\frac{x^4}{4}-\frac{x^3}{3})|_1^2=\frac{17}{12}$\vspace{.1cm}
+
+        $Var(X)=E(X^2)-[E(X)]^2=\frac{17}{12}-(\frac{5}{6})^2=\frac{13}{18}= 0.7222$\vspace{.3cm}
 
         24. El monto de la pérdida $X$, para una póliza de seguro 
         médico tiene una función de distribución\vspace{.1cm}
