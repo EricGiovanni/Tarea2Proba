@@ -191,7 +191,7 @@
             $\therefore F(x)=-e^{-4x}$.\vspace{.3cm}
     
             \begin{center}
-                \includegraphics[scale=0.09]{proba.png}   
+                \includegraphics[scale=0.07]{proba.png}   
             \end{center}
 
         6. Sea $X$ una variable aleatoria continua con función de 
@@ -205,6 +205,10 @@
             \right .$\vspace{.1cm}
 
         a) Grafica $f(x)$ y comprueba que es funcion de densidad\vspace{.1cm}
+
+        \begin{center}
+            \includegraphics[scale=0.9]{grafica.eps}   
+        \end{center}
 
         b)Encuentra y grafica la funcion de distribución de $X$. \vspace{.1cm}
 
@@ -233,12 +237,25 @@
         i. Sea $X$ una variable aleatoria discreta con función de 
         distribución $F(X)$, con esperanza finita y posibles 
         valores dentro del conjunto ${0,1,2,...}$, entonces 
-        $E(X)=\displaystyle\sum_x=0^{\infty}(1-F(x))$\vspace{.1cm}
+        $E(X)=\displaystyle\sum_{x=0}^{\infty}(1-F(x))$\vspace{.1cm}
+
+        \framebox{Demostración:}\vspace{.1cm}
+
+        Sabemos lo siguiente: $F(x)=\mathbb{P}[X\leq x]$ y $1-F(x)=\mathbb{P}[X>x]$, entonces...\vspace{.1cm}
+
+        $\displaystyle\sum_{x=0}^{infty} (1-F(x))=\displaystyle\sum_{x=0}^{\infty} (\displaystyle\sum_{y=x+1}^{\infty} f(y))=\displaystyle\sum_{y=1}^{\infty}{\displaystyle\sum_{x=0}^{y-1}}f(y)
+        =\displaystyle\sum_{y=1}^{\infty}yf(y)+0=\displaystyle\sum_{y=0}^{\infty}yf(y)=E(X)$ $\blacksquare$
 
         ii. Sea $X$ una variable aleatoria continua con función de 
         distribución $F(X)$, con esperanza finita y posibles valores 
         en el intervalo $[0, \infty)$, entonces 
         $E(X)=\displaystyle\int_0^\infty (1-F(x))$\vspace{.1cm}
+
+        \framebox{Demostración:}\vspace{.1cm}
+
+        Sabemos lo siguiente: $F(x)=\displaystyle\int_{-\infty}^{\infty}f(u)du$, entonces...\vspace{.1cm}
+
+        $\displaystyle\int_{0}^{\infty}(1-F(x)) dx=\displaystyle\int_{0}^{\infty}{\displaystyle\int_{x}^{\infty}}f(y)dydx=\displaystyle\int_{0}^{\infty}{\displaystyle\int_{0}^{y}}f(y)dxdy=\displaystyle\int_{0}^{\infty}yf(y)dy=E(X)$ $\blacksquare$
 
         b)Usando el ejercicio anterior, encuentra la esperanza de $X$ 
         cuando ésta tiene función de distribución: \vspace{.1cm}
@@ -261,9 +278,18 @@
 
         a) Si $E(X)=0$ entonces $X=0$\vspace{.1cm}
 
+        FALSO. Tomemos  $F(x) = \left \{ 
+            \begin{matrix}
+                \frac{1}{2}$\hspace{1cm} si $x=-1,1 \\ $
+                $0$ \hspace{1cm} $e.o.c$
+            $\end{matrix}
+        \right .$\vspace{.1cm}
+
+        $E(X)= -\frac{1}{2}+\frac{1}{2}=0$\vspace{.3cm}
+
         b) Si $E(X)=E(Y)$ entonces $X=Y$\vspace{.1cm}
 
-        Tomemos dos funciones:\vspace{.1cm}
+        FALSO. Tomemos dos funciones:\vspace{.1cm}
 
         $f(x_1) = \left \{ 
                 \begin{matrix}
@@ -295,7 +321,21 @@
         lo conduce a la libertad inmediatamente. Suponga que el 
         ladrón escoge al azar cada una de estas puertas, una por una, 
         hasta quedar libre. Encuentre el número promedio de días 
-        que le toma al ladrón quedar en libertad.\vspace{.3cm}
+        que le toma al ladrón quedar en libertad.\vspace{.1cm}
+
+        \framebox{Solución:}\vspace{.1cm}
+
+        \begin{center}
+            \includegraphics[scale=0.09]{sujeto.jpg}   
+        \end{center}\vspace{.1cm}
+
+        $E(X)=(E[X]+1)E[X|X=1]+(E[X]+3)E[X|X=2]$\vspace{.1cm} 
+        
+        pero $E[X|X=1]=E[X|X=2]=E[X|X=3]=\frac{1}{3}$\vspace{.1cm}
+
+        $\Rightarrow E[x]=\frac{E[X]}{3}+\frac{1}{3}+\frac{E[X]}{3}+\frac{3}{3}=\frac{2E[X]}{3}+\frac{4}{3}$\vspace{.1cm}
+
+        $\Rightarrow \frac{E[X]}{3}=\frac{3}{4} \Rightarrow E[X]=4$\vspace{.3cm}
 
         11. Sea $f(x) = \left \{ 
             \begin{matrix}
@@ -343,7 +383,34 @@
 
         a) $Var(E(X)) = E(X)$\vspace{.1cm}
 
-        b) $E(Var(x)) = Var(X)$ \vspace{.3cm}
+        \framebox{Solución:}\vspace{.1cm}
+
+        FALSO. \underline{Contraejemplo:}\vspace{.1cm}
+
+        $f(x) = \left \{ 
+            \begin{matrix}
+                1$\hspace{1cm} si $x = 1 \\ $
+                $0$ \hspace{1cm} $e.o.c$
+            $\end{matrix}
+        \right .$\vspace{.1cm}
+
+        $E[X]= (1)(1)=1$\vspace{.1cm}
+
+        $Var(X)=0\neq 1 = E[x]$\vspace{.1cm}
+
+        $\therefore$ $E[X]\neq Var(E[X])$\vspace{.2cm}
+        
+        b) $E(Var(X)) = Var(X)$ \vspace{.1cm}
+
+        \framebox{Demostración:}\vspace{.1cm}
+
+        Sea $X$ una variable aleatoria.\vspace{.1cm}
+
+        $c=Var(X)\in \mathbb{R^+}$\vspace{.1cm}
+
+        $E[c]=c$\vspace{.1cm}
+
+        $\therefore$ $E[Var(X)]=Var(V)$\vspace{.3cm}
 
         13. Encuentra la función generadora de momentos de $X$ y, 
         a partir de ella, calcula la media y la varianza de $X$ 
