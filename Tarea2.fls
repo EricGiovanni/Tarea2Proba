@@ -134,6 +134,15 @@ INPUT ./images/graf.eps
 INPUT ./images/graf-eps-converted-to.pdf
 INPUT ./images/graf-eps-converted-to.pdf
 INPUT ./images/graf-eps-converted-to.pdf
+INPUT images/grafs.eps
+INPUT ./images/grafs.eps
+INPUT ./images/grafs.eps
+INPUT ./images/grafs-eps-converted-to.pdf
+INPUT ./images/grafs-eps-converted-to.pdf
+INPUT ./images/grafs.eps
+INPUT ./images/grafs-eps-converted-to.pdf
+INPUT ./images/grafs-eps-converted-to.pdf
+INPUT ./images/grafs-eps-converted-to.pdf
 INPUT images/sujeto.jpg
 INPUT ./images/sujeto.jpg
 INPUT ./images/sujeto.jpg
