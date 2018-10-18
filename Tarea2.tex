@@ -26,9 +26,13 @@
 
         a)$X(w)=a_{1}$\vspace{.1cm}
 
+        \framebox{Solución}\vspace{.1cm}
+
         \hspace{.7cm} Es discreta y los valores qu puede tomar son $(.1,.2,...,.9)$\vspace{.1cm}
 
         b)$Y(w)=0.0a_{1}a_{2}a_{3}...$\vspace{.1cm}
+
+        \framebox{Solución}\vspace{.1cm}
 
         \hspace{.7cm} Es continua y los valores que puede tomar están en el intervalo $(0,0.1)$\vspace{.3cm}
 
@@ -46,14 +50,17 @@
 
         i) $f(x) > 0$ cumple porque $x=1,2,...$ vale $\frac{x-1}{2^x}$\vspace{.1cm}
 
-        ii) $\displaystyle\int_{\infty}^{\infty}f(x) = 1$\vspace{.1cm}
+        ii) $\displaystyle\sum_{x=1}^{\infty}\frac{x-1}{2^x}= 
+        \displaystyle\sum_{x=1}^{\infty}\frac{x}{2^x} - 
+        \displaystyle\sum_{x=1}^{\infty}(\frac{1}{2})^{x} = 
+        \displaystyle\sum_{x=1}^{\infty}\displaystyle\sum_{y=1}^{x}(\frac{1}{2^x}) - 1 = 
+        \displaystyle\sum_{y=1}^{\infty}\displaystyle\sum_{x=y}^{\infty}(\frac{1}{2^x}) - 1 = 
+        \displaystyle\sum_{y=1}^{\infty}\frac{(\frac{1}{2})^y}{1-\frac{1}{2}} - 1 = $\vspace{.1cm}
 
-        $\Rightarrow \displaystyle\int_{1}^{\infty}f(x)dx 
-        = \displaystyle\int_{1}^{\infty}\frac{x-1}{2^x}dx$, integrando por partes: \vspace{.1cm}
-        
-        
-        $= \frac{x-1}{ln(2)(2^x)}-\displaystyle\int_{1}^{\infty}\frac{-1}{ln(2)(2^x)}dx =
-        $
+        $=\displaystyle\sum_{y=1}^{\infty}(\frac{1}{2})^{y-1} - 1 = 
+        \displaystyle\sum_{y=0}^{\infty}(\frac{1}{2})^y - 1 = 2 - 1 = 1$\vspace{.1cm}
+
+        $\therefore $ es función de probabilidad
 
         b) $f(x) = \left \{ 
             \begin{matrix}
@@ -66,9 +73,9 @@
 
         i) $f(x) > 0$, ocurre pues $x = 1,..., n$ esta vale: $\frac{(1-p)p^{x-1}}{1-p^n}$\vspace{.1cm}
 
-        ii) $\displaystyle\sum_{1}^{n}\frac{(1-p)p^{x-1}}{1-p^n} = 1$\vspace{.1cm}
+        ii) $\displaystyle\sum_{x=1}^{n}\frac{(1-p)p^{x-1}}{1-p^n} = 1$\vspace{.1cm}
 
-        $\therefore $ es función de probabilidad\vspace{.1cm}
+        $\therefore $ No es función de probabilidad\vspace{.1cm}
 
         c) $f(x) = \left \{ 
             \begin{matrix}
@@ -118,6 +125,8 @@
                     $0$ \hspace{1cm} $e.o.c$
                 $\end{matrix}
             \right .$\vspace{.1cm}
+
+        \framebox{Solución}\vspace{.1cm}
 
         $\displaystyle\int_{0}^{2}c(2x-x^3) dx=1$\vspace{.1cm}
 
