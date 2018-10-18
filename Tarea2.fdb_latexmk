@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1539817080 "/home/eric/Escritorio/Universidad/Probabilidad/Tareas/Tarea2/Tarea2.tex" "Tarea2.pdf" "Tarea2" 1539817082
-  "/home/eric/Escritorio/Universidad/Probabilidad/Tareas/Tarea2/Tarea2.tex" 1539817080 21943 c97cb9378825a2040f819b5ca0653bcd ""
+["pdflatex"] 1539826236 "/home/eric/Escritorio/Universidad/Probabilidad/Tareas/Tarea2/Tarea2.tex" "Tarea2.pdf" "Tarea2" 1539826238
+  "/home/eric/Escritorio/Universidad/Probabilidad/Tareas/Tarea2/Tarea2.tex" 1539826236 24513 5eba4a3e7b38ae77b05b4686020e9913 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1536122179 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1536122179 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1536122179 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -78,8 +78,8 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1536122179 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1536421402 334148 1b9d30ff8c861d6082e3e9bfccd8d7eb ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1536421390 7908118 3f25c7cdacef08853485da48d732f7d7 ""
-  "Tarea2.aux" 1539817082 132 7203aa9c807cd0b75aca4c592e37529c ""
-  "Tarea2.tex" 1539817080 21943 c97cb9378825a2040f819b5ca0653bcd ""
+  "Tarea2.aux" 1539826238 132 7203aa9c807cd0b75aca4c592e37529c ""
+  "Tarea2.tex" 1539826236 24513 5eba4a3e7b38ae77b05b4686020e9913 ""
   "images/proba.png" 1539805838 112322 279d58051b5cea5f685eb8d5971bfee8 ""
   "images/proba2.png" 1539810354 132356 b574090e4fd9fecb7eabd2ce626d0722 ""
   "images/proba3.png" 1539810361 170736 14d832b2f37a7a6680a55738bf1b458b ""
