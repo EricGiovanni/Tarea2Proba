@@ -26,7 +26,7 @@
 
         a)$X(w)=a_{1}$\vspace{.1cm}
 
-        \hspace{.7cm} Es discreta y los valores qu puede tomar son $(.1,.2,...,.9)$\vspace{.1cm}
+        \hspace{.7cm} Es discreta y los valores que puede tomar son $(.1,.2,...,.9)$\vspace{.1cm}
 
         b)$Y(w)=0.0a_{1}a_{2}a_{3}...$\vspace{.1cm}
 
@@ -207,10 +207,20 @@
         a) Grafica $f(x)$ y comprueba que es funcion de densidad\vspace{.1cm}
 
         \begin{center}
-            \includegraphics[scale=0.9]{grafica.eps}   
+            \includegraphics[scale=0.5]{grafica.eps}   
         \end{center}
 
+        $\displaystyle\int_{1}^\infty \frac{1}{x^2} dx = \lim_{b \to \infty}\displaystyle\int_1^b \frac{1}{x^2} dx = \lim_{b \to \infty} (-\frac{1}{x})|_1^b=(-\frac{1}{\infty})-(-\frac{1}{1}) = 1$\vspace{.1cm}
+
+        $\therefore$ $f(x)$ es $f.d.p.$\vspace{.2cm}
+
         b)Encuentra y grafica la funcion de distribución de $X$. \vspace{.1cm}
+
+        $F_x(X)=\displaystyle\int_1^x t^{-2} dx=-t^{-1}|_1^x=1-\frac{1}{x}$\vspace{.1cm}
+
+        \begin{center}
+            \includegraphics[scale=0.4]{graf.eps}   
+        \end{center}
 
         c) Encuentra y grafica la funcion de distribución de la variable 
         $Y = e^{-x}$\vspace{.3cm}
@@ -243,7 +253,7 @@
 
         Sabemos lo siguiente: $F(x)=\mathbb{P}[X\leq x]$ y $1-F(x)=\mathbb{P}[X>x]$, entonces...\vspace{.1cm}
 
-        $\displaystyle\sum_{x=0}^{infty} (1-F(x))=\displaystyle\sum_{x=0}^{\infty} (\displaystyle\sum_{y=x+1}^{\infty} f(y))=\displaystyle\sum_{y=1}^{\infty}{\displaystyle\sum_{x=0}^{y-1}}f(y)
+        $\displaystyle\sum_{x=0}^{\infty} (1-F(x))=\displaystyle\sum_{x=0}^{\infty} (\displaystyle\sum_{y=x+1}^{\infty} f(y))=\displaystyle\sum_{y=1}^{\infty}{\displaystyle\sum_{x=0}^{y-1}}f(y)
         =\displaystyle\sum_{y=1}^{\infty}yf(y)+0=\displaystyle\sum_{y=0}^{\infty}yf(y)=E(X)$ $\blacksquare$
 
         ii. Sea $X$ una variable aleatoria continua con función de 
@@ -652,7 +662,13 @@
                 $\end{matrix}
             \right .$\vspace{.1cm}
 
-        Encuentra la varianza de $X$.\vspace{.3cm}
+        Encuentra la varianza de $X$.\vspace{.1cm}
+
+        \framebox{Solución:}\vspace{.1cm}
+
+        $Var(X)=E(X^2)-[E(X)]^2$\vspace{.1cm}
+
+        $E(X)=\displaystyle\int_1^2xF$
 
         24. El monto de la pérdida $X$, para una póliza de seguro 
         médico tiene una función de distribución\vspace{.1cm}
