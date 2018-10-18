@@ -26,13 +26,9 @@
 
         a)$X(w)=a_{1}$\vspace{.1cm}
 
-<<<<<<< HEAD
         \framebox{Solución}\vspace{.1cm}
 
         \hspace{.7cm} Es discreta y los valores qu puede tomar son $(.1,.2,...,.9)$\vspace{.1cm}
-=======
-        \hspace{.7cm} Es discreta y los valores que puede tomar son $(.1,.2,...,.9)$\vspace{.1cm}
->>>>>>> 418917eb9f958cf7a2f885bc08160bd8cf1e3ed4
 
         b)$Y(w)=0.0a_{1}a_{2}a_{3}...$\vspace{.1cm}
 
@@ -79,7 +75,7 @@
 
         ii) $\displaystyle\sum_{x=1}^{n}\frac{(1-p)p^{x-1}}{1-p^n} = 1$\vspace{.1cm}
 
-        $\therefore $ No es función de probabilidad\vspace{.1cm}
+        $\therefore $ es función de probabilidad\vspace{.1cm}
 
         c) $f(x) = \left \{ 
             \begin{matrix}
@@ -247,6 +243,17 @@
                     $0$ \hspace{1cm} $e.o.c$
                 $\end{matrix}
             \right .$\vspace{.1cm}
+
+        \framebox{Solución}\vspace{.1cm}
+
+        $M_x(t) = E(e^{tx})(\displaystyle\sum_{x=1}^{n}e^{tx}(\frac{1}{2^x})) 
+        = e^{t} \displaystyle\sum_{x=1}^{n}(\frac{1}{2^x}) = e^t(1) = e^t$\vspace{.1cm}
+
+        $M_x(t) = e^t$\vspace{.1cm}
+
+        $M'(0) = 1$\vspace{.1cm}
+
+        $\therefore $ La esperanza es igual a 1\vspace{.1cm}
 
         b)$f(x) = \left \{ 
                 \begin{matrix}
@@ -446,12 +453,46 @@
             $\end{matrix}
         \right .$\vspace{.1cm}
 
+        \framebox{Solución}\vspace{.1cm}
+
+        $M_x(t) = E(e^{tx})(\displaystyle\sum_{x=1}^{n}e^{tx}(\frac{1}{2^x})) 
+        = e^{t} \displaystyle\sum_{x=1}^{n}(\frac{1}{2^x}) = e^t(1) = e^t$\vspace{.1cm}
+
+        $M_x(t) = e^t$\vspace{.1cm}
+
+        $M'(0) = 1$\vspace{.1cm}
+
+        $\therefore $ La esperanza es igual a 1\vspace{.1cm}
+
+        $Var(x) = E(x^2) - (E(x))^2$\vspace{.1cm}
+
+        $Var(x) = \displaystyle\sum_{x=1}^{n}\frac{x^2}{2x} - \displaystyle\sum_{x=1}^{n}\frac{x}{2^x} 
+        = 2^{-n}(-n^2-4n+6(2^n-1))-2^{-n}(-n+2^{n+1}-2)$\vspace{.1cm}
+
         b)$f(x) = \left \{ 
                 \begin{matrix}
                     e^{-x}$\hspace{1cm} si $x > 0 \\ $
                     $0$ \hspace{1cm} $e.o.c$
                 $\end{matrix}
-            \right .$\vspace{.3cm}
+            \right .$\vspace{.1cm}
+
+        \framebox{Solución}\vspace{.1cm}
+        
+        $M_x(t) = E(e^{tx}) = \displaystyle\int_{0}^{\infty}e^{tx}e^{-x}dx =
+        \displaystyle\int_{0}^{\infty}e^{(t-1)x}dx = 
+        \left . \frac{e^{(t-1)x}}{t-1} \right |_{0}^{\infty}, (t-1) < 0$\vspace{.1cm}
+
+        $M_x(t) = \frac{-1}{t-1}$\vspace{.1cm}
+
+        $E(x) = M'(0) = \left . \frac{d}{dt}(\frac{-1}{t-1}) \right |_{t=0} = 
+        \left . \frac{t}{(t-1)^2} \right |_{t=0} = 1$\vspace{.1cm}
+
+        $E(x^2) = M''(0) = \left . \frac{d}{dt} \frac{1}{(t-1)^2} \right |_{t=0} = 2$, 
+        ahora saquemos la varianza: \vspace{.1cm}
+
+        $Var(x) = E(x^2) - E(x) = 2 - 1 = 1$\vspace{.1cm}
+
+        $\therefore $ la varianza es 1
 
         14. Una póliza de seguro grupal cubre los reclamos médicos 
         de los empleados de una pequeña empresa. El valor, $V$, de 
